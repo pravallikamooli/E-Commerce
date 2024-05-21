@@ -2,8 +2,6 @@ import React from 'react';
 import './style.css';
 
 import img1 from '../../../assets/images/thumbnail-1.jpg';
-import img2 from '../../../assets/images/thumbnail-1.jpg';
-import img3 from '../../../assets/images/thumbnail-1.jpg';
 import { Link } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
 
@@ -36,7 +34,7 @@ const TopProducts = (props) => {
 
                     <div className='img'>
                         <Link to="">
-                            <img src={img1} className='w-100' />
+                            <img src={img1} className='w-100' alt='image 1' />
                         </Link>
                     </div>
 
@@ -55,7 +53,7 @@ const TopProducts = (props) => {
 
                     <div className='img'>
                         <Link to="">
-                            <img src={img1} className='w-100' />
+                            <img src={img1} className='w-100' alt='image 1' />
                         </Link>
                     </div>
 

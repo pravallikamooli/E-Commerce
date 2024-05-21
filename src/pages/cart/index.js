@@ -7,11 +7,9 @@ import { Button } from '@mui/material';
 import QuantityBox from '../../components/quantityBox';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { MyContext } from '../../App';
-import axios from 'axios';
 
 import { useNavigate } from 'react-router-dom';
 
-import { loadStripe } from '@stripe/stripe-js';
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState([])
@@ -118,7 +116,7 @@ const Cart = () => {
 
                                                                     <div className='img'>
                                                                         <Link to={`/product/${item.id}`}>
-                                                                            <img src={item.catImg + '?im=Resize=(100,100)'} className='w-100' />
+                                                                            <img src={item.catImg + '?im=Resize=(100,100)'} alt='image fromcart' className='w-100' />
                                                                         </Link>
                                                                     </div>
 

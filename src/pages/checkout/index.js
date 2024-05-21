@@ -8,7 +8,6 @@ import { MyContext } from '../../App';
 
 import { useNavigate } from 'react-router-dom';
 
-import axios from 'axios';
 
 const Checkout = () => {
 
@@ -26,7 +25,7 @@ const Checkout = () => {
 
     const placeOrder = () => {
 
-        if (formFields.name === "" || formFields.address == "" || formFields.pincode == "" || formFields.phoneNumber == "") {
+        if (formFields.name === "" || formFields.address === "" || formFields.pincode === "" || formFields.phoneNumber === "") {
             alert("All fields Required");
             return false;
         }
